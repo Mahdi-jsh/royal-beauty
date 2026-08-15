@@ -1,0 +1,54 @@
+/* تبلت */
+@media (max-width: 992px) {
+  .container { padding: 0 16px; }
+  .header-inner { gap: 15px; }
+  .search-box { display: none; }
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-content h1 { font-size: 36px; }
+  .features-grid { grid-template-columns: repeat(2, 1fr); }
+  .products-grid { grid-template-columns: repeat(3, 1fr); }
+  .categories-grid { grid-template-columns: repeat(3, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .shop-layout { grid-template-columns: 1fr; }
+  .shop-sidebar { position: static; }
+  .cart-grid { grid-template-columns: 1fr; }
+  .product-detail-grid { grid-template-columns: 1fr; gap: 30px; padding: 25px; }
+  .blog-grid { grid-template-columns: repeat(2, 1fr); }
+  .about-grid, .contact-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .banners-grid { grid-template-columns: 1fr; }
+  .nav-item { padding: 14px 14px; font-size: 13px; }
+}
+
+/* موبایل */
+@media (max-width: 768px) {
+  .topbar-links { display: none; }
+  .nav-inner { overflow-x: auto; }
+  .nav-item { white-space: nowrap; padding: 14px 12px; font-size: 12px; }
+  .hero-content h1 { font-size: 28px; }
+  .hero-content p { font-size: 15px; }
+  .section { padding: 50px 0; }
+  .section-title { font-size: 26px; }
+  .products-grid { grid-template-columns: repeat(2, 1fr); gap: 15px; }
+  .categories-grid { grid-template-columns: repeat(2, 1fr); }
+  .features-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+  .blog-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .product-info { padding: 12px; }
+  .product-title { font-size: 13px; min-height: 38px; }
+  .price-current { font-size: 15px; }
+  .form-container { padding: 25px; }
+  .banner-card { padding: 30px; min-height: 200px; }
+  .banner-card h3 { font-size: 22px; }
+  .breadcrumb ol { font-size: 12px; }
+  .cart-item { grid-template-columns: 80px 1fr; }
+  .cart-item-image { width: 80px; height: 80px; }
+  .cart-item-price { grid-column: 2; text-align: right; }
+}
+
+@media (max-width: 480px) {
+  .products-grid { grid-template-columns: 1fr 1fr; }
+  .hero-content h1 { font-size: 24px; }
+  .btn-lg { padding: 12px 24px; font-size: 14px; }
+}
