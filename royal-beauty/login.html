@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ورود به حساب کاربری | رویال بیوتی</title>
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .auth-page {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--color-accent), var(--color-bg-soft));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-5);
+    }
+    .auth-back {
+      position: absolute;
+      top: var(--space-5);
+      right: var(--space-5);
+      color: var(--color-text-soft);
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      padding: var(--space-2) var(--space-3);
+      border-radius: var(--radius-md);
+      font-size: var(--fs-sm);
+    }
+    .auth-back:hover { background: rgba(255,255,255,0.6); }
+
+    .auth-card {
+      background: var(--color-white);
+      border-radius: var(--radius-xl);
+      padding: var(--space-8);
+      width: 100%;
+      max-width: 440px;
+      box-shadow: var(--shadow-xl);
+      position: relative;
+    }
+    .auth-logo {
+      text-align: center;
+      margin-bottom: var(--space-6);
+    }
+    .auth-logo .icon {
+      width: 64px;
+      height: 64px;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-white);
+      font-size: 2rem;
+      margin: 0 auto var(--space-3);
+    }
+    .auth-logo h2 { font-size: var(--fs-2xl); margin-bottom: var(--space-2); }
+    .auth-logo p { color: var(--color-text-soft); font-size: var(--fs-sm); }
+
+    .social-login {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-3);
+      margin-bottom: var(--space-5);
+    }
+    .social-btn {
+      padding: var(--space-3);
+      border: 1.5px solid var(--color-border);
+      border-radius: var(--radius-md);
+      background: var(--color-white);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-2);
+      transition: all var(--transition);
+    }
+    .social-btn:hover { background: var(--color-bg-soft); border-color: var(--color-primary); }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      margin: var(--space-5) 0;
+      color: var(--color-text-muted);
+      font-size: var(--fs-sm);
+    }
+    .divider::before,
+    .divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--color-border);
+    }
+
+    .auth-form-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: var(--space-4);
+    }
+    .auth-link {
+      color: var(--color-primary);
+      font-size: var(--fs-sm);
+      font-weight: 500;
+    }
+    .auth-link:hover { color: var(--color-primary-dark); }
+
+    .auth-footer {
+      text-align: center;
+      margin-top: var(--space-5);
+      padding-top: var(--space-5);
+      border-top: 1px solid var(--color-border);
+      font-size: var(--fs-sm);
+      color: var(--color-text-soft);
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="auth-back">
+    <span>→</span> بازگشت
+  </a>
+
+  <div class="auth-page">
+    <div class="auth-card fade-in">
+      <div class="auth-logo">
+        <div class="icon">👑</div>
+        <h2>خوش آمدید</h2>
+        <p>به حساب کاربری خود وارد شوید</p>
+      </div>
+
+      <!-- Social Login -->
+      <div class="social-login">
+        <button class="social-btn">
+          <span>🔵</span> گوگل
+        </button>
+        <button class="social-btn">
+          <span>🍎</span> اپل
+        </button>
+      </div>
+
+      <div class="divider">یا با ایمیل</div>
+
+      <form>
+        <div class="form-group">
+          <label class="form-label">ایمیل یا شماره موبایل <span class="required">*</span></label>
+          <div class="input-group">
+            <span class="input-icon">📧</span>
+            <input type="text" class="form-control" placeholder="example@email.com" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">رمز عبور <span class="required">*</span></label>
+          <div class="input-group toggle-password">
+            <span class="input-icon">🔒</span>
+            <input type="password" class="form-control" placeholder="رمز عبور خود را وارد کنید" required />
+            <span class="input-icon" style="left: var(--space-4); right: auto;">👁️</span>
+          </div>
+        </div>
+
+        <div class="auth-form-row">
+          <label class="form-check">
+            <input type="checkbox" />
+            <span>مرا به خاطر بسپار</span>
+          </label>
+          <a href="#" class="auth-link">رمز را فراموش کردم</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-lg">
+          ورود
+        </button>
+      </form>
+
+      <div class="auth-footer">
+        حساب کاربری ندارید؟ <a href="register.html" class="auth-link">ثبت‌نام کنید</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
