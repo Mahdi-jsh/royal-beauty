@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ایجاد حساب کاربری | رویال بیوتی</title>
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>/* مثل login.html با تغییرات زیر */</style>
+</head>
+<body>
+  <a href="index.html" class="auth-back"><span>→</span> بازگشت</a>
+
+  <div class="auth-page">
+    <div class="auth-card fade-in" style="max-width: 520px;">
+      <div class="auth-logo">
+        <div class="icon">👑</div>
+        <h2>ایجاد حساب کاربری</h2>
+        <p>به جمع مشتریان ما بپیوندید</p>
+      </div>
+
+      <!-- Social Login در بالا -->
+      <div class="social-login">
+        <button class="social-btn"><span>🔵</span> ثبت‌نام با گوگل</button>
+        <button class="social-btn"><span>🍎</span> ثبت‌نام با اپل</button>
+      </div>
+
+      <div class="divider">یا با ایمیل</div>
+
+      <form>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3);">
+          <div class="form-group">
+            <label class="form-label">نام <span class="required">*</span></label>
+            <input type="text" class="form-control" placeholder="نام" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">نام خانوادگی <span class="required">*</span></label>
+            <input type="text" class="form-control" placeholder="نام خانوادگی" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">شماره موبایل <span class="required">*</span></label>
+          <div class="input-group">
+            <span class="input-icon">📱</span>
+            <input type="tel" class="form-control" placeholder="۰۹۱۲۳۴۵۶۷۸۹" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">ایمیل <span class="required">*</span></label>
+          <div class="input-group">
+            <span class="input-icon">📧</span>
+            <input type="email" class="form-control" placeholder="example@email.com" required />
+          </div>
+        </div>
+
+        <!-- رمز عبور و تکرار کنار هم -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3);">
+          <div class="form-group">
+            <label class="form-label">رمز عبور <span class="required">*</span></label>
+            <input type="password" class="form-control" placeholder="حداقل ۸ کاراکتر" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">تکرار رمز عبور <span class="required">*</span></label>
+            <input type="password" class="form-control" placeholder="تکرار رمز عبور" required />
+          </div>
+        </div>
+
+        <label class="form-check" style="margin-bottom: var(--space-5);">
+          <input type="checkbox" required />
+          <span style="font-size: var(--fs-sm);">
+            <a href="#" class="auth-link">قوانین و مقررات</a> را مطالعه کرده و می‌پذیرم
+          </span>
+        </label>
+
+        <button type="submit" class="btn btn-primary btn-block btn-lg">
+          👤 ایجاد حساب
+        </button>
+
+        <div class="auth-footer">
+          قبلاً ثبت‌نام کرده‌اید؟ <a href="login.html" class="auth-link">وارد شوید</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

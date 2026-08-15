@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>درباره ما | رویال بیوتی</title>
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .about-content { padding: var(--space-10) 0; }
+    .about-intro {
+      max-width: 800px;
+      margin: 0 auto var(--space-10);
+      text-align: center;
+    }
+    .about-intro h2 { font-size: var(--fs-3xl); margin-bottom: var(--space-5); }
+    .about-intro p { color: var(--color-text-soft); margin-bottom: var(--space-4); line-height: 2; }
+
+    .about-cta {
+      text-align: center;
+      margin: var(--space-6) 0 var(--space-10);
+    }
+
+    .about-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-5);
+      padding: var(--space-8);
+      background: var(--color-white);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-md);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .about-stats .stat { text-align: center; }
+    .about-stats .number {
+      font-size: var(--fs-4xl);
+      font-weight: 700;
+      color: var(--color-primary);
+      display: block;
+      margin-bottom: var(--space-2);
+    }
+    .about-stats .label { color: var(--color-text-soft); font-size: var(--fs-sm); }
+
+    .values {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-5);
+      margin-top: var(--space-10);
+    }
+    @media (min-width: 768px) { .values { grid-template-columns: repeat(3, 1fr); } }
+
+    .value-card {
+      background: var(--color-white);
+      padding: var(--space-6);
+      border-radius: var(--radius-lg);
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      transition: all var(--transition);
+    }
+    .value-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .value-icon {
+      width: 72px;
+      height: 72px;
+      background: linear-gradient(135deg, var(--color-accent), var(--color-primary-light));
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin: 0 auto var(--space-4);
+    }
+    .value-card h4 { margin-bottom: var(--space-3); }
+    .value-card p { color: var(--color-text-soft); font-size: var(--fs-sm); }
+  </style>
+</head>
+<body>
+  <!-- Header (کپی شده) -->
+  <div class="top-bar">...</div>
+  <header class="header">...</header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>درباره رویال بیوتی</h1>
+      <div class="breadcrumb">
+        <a href="index.html">خانه</a><span class="breadcrumb-separator">❯</span><span>درباره ما</span>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <div class="container">
+      <div class="about-content">
+        <!-- متن معرفی در مرکز -->
+        <div class="about-intro fade-in">
+          <h2>داستان ما</h2>
+          <p>
+            رویال بیوتی با ۱۰ سال تجربه در زمینه عرضه محصولات آرایشی و بهداشتی، با هدف ارائه محصولات باکیفیت و اورجینال از معتبرترین برندهای جهان به مشتریان ایرانی تأسیس شد.
+          </p>
+          <p>
+            ما باور داریم که زیبایی حق همه است. به همین دلیل تلاش می‌کنیم تا با ارائه محصولات اصل با قیمت مناسب، زیبایی و اعتماد به نفس را به خانه‌های شما بیاوریم.
+          </p>
+
+          <div class="about-cta">
+            <a href="shop.html" class="btn btn-primary btn-lg">🛍️ محصولات ما را ببینید</a>
+          </div>
+        </div>
+
+        <!-- آمار در پایین -->
+        <div class="about-stats">
+          <div class="stat">
+            <span class="number">۵۰۰+</span>
+            <span class="label">محصول طبیعی</span>
+          </div>
+          <div class="stat">
+            <span class="number">۲۰K+</span>
+            <span class="label">مشتری راضی</span>
+          </div>
+          <div class="stat">
+            <span class="number">۱۰+</span>
+            <span class="label">سال تجربه</span>
+          </div>
+        </div>
+
+        <!-- ارزش‌های ما -->
+        <div class="values">
+          <div class="value-card fade-in">
+            <div class="value-icon">🌿</div>
+            <h4>محصولات ارگانیک</h4>
+            <p>استفاده از مواد اولیه طبیعی و ارگانیک در تولید محصولات</p>
+          </div>
+          <div class="value-card fade-in">
+            <div class="value-icon">✅</div>
+            <h4>تضمین اصالت</h4>
+            <p>۱۰۰٪ تضمین اصالت تمامی محصولات با گواهی‌نامه معتبر</p>
+          </div>
+          <div class="value-card fade-in">
+            <div class="value-icon">❤️</div>
+            <h4>رضایت مشتری</h4>
+            <p>اولویت اول ما جلب رضایت و اعتماد مشتریان عزیز است</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+</body>
+</html>
